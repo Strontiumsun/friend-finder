@@ -15,19 +15,7 @@ var connection = mysql.createConnection({
 });
 
 require("./app/routing/htmlRoutes.js")(app);
-
-app.get("/api/friends", function (req, res) {
-    connection.query("SELECT * FROM profiles", function (err, data) {
-        if (err) throw err;
-        console.log(data);
-        return res.json(data);
-
-    })
-})
-
-app.post("/api/friends", function (req, res) {
-    // this needs to take data probably from a button of sorts.
-})
+require("./app/routing/apiRoutes.js")(app);
 
 
 connection.connect(function (err) {
@@ -37,7 +25,6 @@ connection.connect(function (err) {
     }
     console.log("connected as id " + connection.threadId);
 });
-
 
 
 app.listen(PORT, function () {
