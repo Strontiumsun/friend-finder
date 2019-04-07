@@ -119,7 +119,13 @@ That will look something like this:
        - User 2: `[3, 2, 6, 4, 5, 1, 2, 5, 4, 1]`
        - Total Difference: **2 + 1 + 2 =** **_5_**
    - Remember to use the absolute value of the differences. Put another way: no negative solutions! Your app should calculate both `5-3` and `3-5` as `2`, and so on.
-   - math.abs
+   - math.abs 
+   - for (loop1) {
+     for (loop2) {
+       math.abs(loop1[i] - loop2[j])
+     }
+   }
+   
    - The closest match will be the user with the least amount of difference.
 
 9. Once you've found the current user's most compatible friend, display the result as a modal pop-up.
