@@ -13,3 +13,4 @@ VALUES ("Ogilvie", "https://file.toyhou.se/images/2304344_GJxEiudvJzIr2Zx.png", 
 ("Jane", "https://file.toyhou.se/images/2304423_mxFXYd52Wfk0bsj.png", "3");
 
 SELECT * FROM profiles;
+
