@@ -43,6 +43,8 @@ var user = [
         name: "Toby",
         phone_number: 310,
         scores: [5, 4, 3]
+        //3, 0, 2
+        //2, 3, 1
     }
 ]
 
@@ -52,8 +54,9 @@ var user = [
 var userScores = [5, 4, 3];
 
 
-var demoCompare;
-var demoDiff = [];
+var demoCompare = 0;
+var demoDiff = 1000;
+var demoMatch = {};
 
 for (var i = 0; i < demo.length; i++) {
     // console.log(demo[i].scores);
@@ -61,13 +64,17 @@ for (var i = 0; i < demo.length; i++) {
     // console.log(demoScores);
 
     for (var j = 0; j < userScores.length; j++) {
-        demoCompare = Math.abs(userScores[j] - demoScores[j]);
+        demoCompare += Math.abs(userScores[j] - demoScores[j]);
 
         console.log(demoCompare);
 
-
+    }
+    if (demoCompare < demoDiff) {
+        demoDiff = demoCompare;
+        match = demo[i];
     }
 
+    console.log(match)
 }
 
 
