@@ -12,6 +12,24 @@
 </head>
 
 <body>
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Your New Friend!</h5>
+                    <button type="button" class="close" id="close1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal_here">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" id="close2" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <header class="header">
             <h1>Find Your Friend!</h1>
@@ -28,42 +46,120 @@
                 <input type="text" class="form-control" id="image_place">
             </div>
             <div class="form-group">
-                <label for="q1">Question 1</label>
+                <label for="q1"><strong>Question 1:</strong> You make friends easily.</label>
                 <select class="option form-control">
-                    <option value=1 name="q1">1</option>
+                    <option value=1 name="q1">1 (Strongly Disagree)</option>
                     <option value=2 name="q1">2</option>
                     <option value=3 name="q1">3</option>
                     <option value=4 name="q1">4</option>
-                    <option value=5 name="q1">5</option>
+                    <option value=5 name="q1">5 (Strongly Agree)</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="q2">Question 2</label>
+                <label for="q2"><strong>Question 2:</strong> You like to let others lead.</label>
                 <select class="option form-control">
-                    <option value=1 name="q2">1</option>
+                    <option value=1 name="q2">1 (Strongly Disagree)</option>
                     <option value=2 name="q2">2</option>
                     <option value=3 name="q2">3</option>
                     <option value=4 name="q2">4</option>
-                    <option value=5 name="q2">5</option>
+                    <option value=5 name="q2">5 (Strongly Agree)</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="q3">Question 3</label>
+                <label for="q3"><strong>Question 3:</strong> You are sensitive to other's emotions.</label>
                 <select class="option form-control">
-                    <option value=1 name="q3">1</option>
+                    <option value=1 name="q3">1 (Strongly Disagree)</option>
                     <option value=2 name="q3">2</option>
                     <option value=3 name="q3">3</option>
                     <option value=4 name="q3">4</option>
-                    <option value=5 name="q3">5</option>
+                    <option value=5 name="q3">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q4"><strong>Question 4:</strong> You are always on the go.</label>
+                <select class="option form-control">
+                    <option value=1 name="q4">1 (Strongly Disagree)</option>
+                    <option value=2 name="q4">2</option>
+                    <option value=3 name="q4">3</option>
+                    <option value=4 name="q4">4</option>
+                    <option value=5 name="q4">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q5"><strong>Question 5:</strong> You get upset easily.</label>
+                <select class="option form-control">
+                    <option value=1 name="q5">1 (Strongly Disagree)</option>
+                    <option value=2 name="q5">2</option>
+                    <option value=3 name="q5">3</option>
+                    <option value=4 name="q5">4</option>
+                    <option value=5 name="q5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q6"><strong>Question 6:</strong> You love to daydream.</label>
+                <select class="option form-control">
+                    <option value=1 name="q6">1 (Strongly Disagree)</option>
+                    <option value=2 name="q6">2</option>
+                    <option value=3 name="q6">3</option>
+                    <option value=4 name="q6">4</option>
+                    <option value=5 name="q6">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q7"><strong>Question 7:</strong> You are passionate about causes or ideas.</label>
+                <select class="option form-control">
+                    <option value=1 name="q7">1 (Strongly Disagree)</option>
+                    <option value=2 name="q7">2</option>
+                    <option value=3 name="q7">3</option>
+                    <option value=4 name="q7">4</option>
+                    <option value=5 name="q7">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q8"><strong>Question 8:</strong> You want everything to be "just right."</label>
+                <select class="option form-control">
+                    <option value=1 name="q8">1 (Strongly Disagree)</option>
+                    <option value=2 name="q8">2</option>
+                    <option value=3 name="q8">3</option>
+                    <option value=4 name="q8">4</option>
+                    <option value=5 name="q8">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q9"><strong>Question 9:</strong> You have a hard time making up your mind.</label>
+                <select class="option form-control">
+                    <option value=1 name="q9">1 (Strongly Disagree)</option>
+                    <option value=2 name="q9">2</option>
+                    <option value=3 name="q9">3</option>
+                    <option value=4 name="q9">4</option>
+                    <option value=5 name="q9">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q10"><strong>Question 10:</strong> You see beauty in things that others might not
+                    notice.</label>
+                <select class="option form-control">
+                    <option value=1 name="q10">1 (Strongly Disagree)</option>
+                    <option value=2 name="q10">2</option>
+                    <option value=3 name="q10">3</option>
+                    <option value=4 name="q10">4</option>
+                    <option value=5 name="q10">5 (Strongly Agree)</option>
                 </select>
             </div>
             <button type="submit" id="submit-button" class="btn btn-primary" value="Submit">Find a Friend!</button>
         </form>
     </div>
 
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript">
+        $("#close1").on("click", function () {
+            $(".modal").css("display", "none");
+        })
+        $("#close2").on("click", function () {
+            $(".modal").css("display", "none");
+        })
 
         $("#submit-button").on("click", function (event) {
             event.preventDefault();
@@ -81,8 +177,13 @@
                 photo: $("#image_place").val().trim(),
                 scores: arr.join(",")
             };
-            $.post("/api/friends", newFriend).then(function () {
+            $.post("/api/friends", newFriend).then(function (data) {
                 console.log("data sent!");
+                console.log(data);
+
+                $("#modal_here").append(`<div><h2>${data.name}</h2><br><img src='${data.photo}'></div>`)
+                $(".modal").css("display", "block");
+
             })
         })
 
