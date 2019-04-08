@@ -5,44 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Survey</title>
 </head>
 
 <body>
-    <h1>Huh? It's the survey page!</h1>
-    <p>I love surveys!</p>
-    <br><br>
-    <form>
-        <div>Enter Your Name</div>
-        <input type="text" placeholder="Name" id="name_place"><br>
-        <div>Link a photo</div>
-        <input type="text" id="image_place"><br>
-        <div>Q1</div>
-        <select class="option">
-            <option value=1 name="q1">1</option>
-            <option value=2 name="q1">2</option>
-            <option value=3 name="q1">3</option>
-            <option value=4 name="q1">4</option>
-            <option value=5 name="q1">5</option>
-        </select><br>
-        <div>Q2</div>
-        <select class="option">
-            <option value=1 name="q2">1</option>
-            <option value=2 name="q2">2</option>
-            <option value=3 name="q2">3</option>
-            <option value=4 name="q2">4</option>
-            <option value=5 name="q2">5</option>
-        </select><br>
-        <div>Q3</div>
-        <select class="option">
-            <option value=1 name="q3">1</option>
-            <option value=2 name="q3">2</option>
-            <option value=3 name="q3">3</option>
-            <option value=4 name="q3">4</option>
-            <option value=5 name="q3">5</option>
-        </select><br>
-        <input type="submit" id="submit-button" value="Submit">
-    </form>
+    <div class="container">
+        <header class="header">
+            <h1>Find Your Friend!</h1>
+        </header>
+    </div>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="name-input">Your Name</label>
+                <input type="text" class="form-control" placeholder="Name" id="name_place">
+            </div>
+            <div class="form-group">
+                <label for="photo-input">Link a Photo</label>
+                <input type="text" class="form-control" id="image_place">
+            </div>
+            <div class="form-group">
+                <label for="q1">Question 1</label>
+                <select class="option form-control">
+                    <option value=1 name="q1">1</option>
+                    <option value=2 name="q1">2</option>
+                    <option value=3 name="q1">3</option>
+                    <option value=4 name="q1">4</option>
+                    <option value=5 name="q1">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q2">Question 2</label>
+                <select class="option form-control">
+                    <option value=1 name="q2">1</option>
+                    <option value=2 name="q2">2</option>
+                    <option value=3 name="q2">3</option>
+                    <option value=4 name="q2">4</option>
+                    <option value=5 name="q2">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q3">Question 3</label>
+                <select class="option form-control">
+                    <option value=1 name="q3">1</option>
+                    <option value=2 name="q3">2</option>
+                    <option value=3 name="q3">3</option>
+                    <option value=4 name="q3">4</option>
+                    <option value=5 name="q3">5</option>
+                </select>
+            </div>
+            <button type="submit" id="submit-button" class="btn btn-primary" value="Submit">Find a Friend!</button>
+        </form>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript">
