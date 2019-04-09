@@ -46,6 +46,4 @@ then we send that to the front end with the matched person's data
 
 Make sure you grab the person first and store it in the route
 
-# name, photo, scores
-'Trickster', 'https://file.toyhou.se/images/5786372_k7S0D2B862MZkM0.png?1513786015', '5,2,2,5,1,4,4,3,2,3'
 
