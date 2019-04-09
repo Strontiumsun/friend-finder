@@ -54,28 +54,32 @@ var user = [
 var userScores = [5, 4, 3];
 
 
-var demoCompare = 0;
+
 var demoDiff = 1000;
 var demoMatch = {};
 
+//connection query:
 for (var i = 0; i < demo.length; i++) {
     // console.log(demo[i].scores);
     var demoScores = demo[i].scores;
-    // console.log(demoScores);
-
+    demoScores = demoScores.split(",")
+    console.log(demoScores);
+    var demoCompare = 0;
     for (var j = 0; j < userScores.length; j++) {
-        demoCompare += Math.abs(userScores[j] - demoScores[j]);
+        demoCompare += Math.abs(parseInt(userScores[j]) - parseInt(demoScores[j]));
 
         console.log(demoCompare);
 
     }
     if (demoCompare < demoDiff) {
         demoDiff = demoCompare;
-        match = demo[i];
+        demoMatch = demo[i];
     }
 
-    console.log(match)
+    console.log(demoMatch)
+
 }
+return res.json(demoMatch);
 
 
 

@@ -166,8 +166,8 @@
             var arr = [];
             console.log("clicked submit button!")
             $("select option:selected").each(function () {
-                console.log($(this).text());
-                arr.push($(this).text());
+                console.log($(this).val());
+                arr.push($(this).val());
 
             });
             console.log(arr.join(","))
